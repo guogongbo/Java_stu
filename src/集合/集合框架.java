@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 public class 集合框架 {
     public static void main(String[] args) {
         Collection <String> strings =new ArrayList<>();
-        ArrayList <String> strings1 =new ArrayList<>();//这两种都可以，我们用第一种
+       // ArrayList <String> strings1 =new ArrayList<>();//这两种都可以，我们用第一种
         strings.add("1");
         strings.add("2");
         strings.add("3");
@@ -30,11 +30,12 @@ public class 集合框架 {
             System.out.println(i);
         }
         //Lambda表达式也能遍历，集合对象名.foreach（new consummer<>(){"这是接口的匿名内部类"}）
-        strings.forEach(new Consumer<String>() {
+        strings.forEach(new Consumer<String>() {//形参可以用lambda表达式
             @Override
             public void accept(String s) {
                 System.out.println(s);
             }
         });
-    }
+        strings.forEach(s ->System.out.println(s));//Lambda表达式对于有且只有一个方法的接口 ，
+    }                                            //（方法的形参，可以不用写数据类型）->{方法函数体，如果方法函数体只有一行，那么可以不写大括号}
 }
