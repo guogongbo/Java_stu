@@ -8,7 +8,8 @@ public class 匿名内部类 {
                 System.out.println("猫游了10秒");
             }
 
-        };
+        };//实例化接口
+
         go(cat);
         //或者直接
         go(new Swimming() {

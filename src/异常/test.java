@@ -8,7 +8,7 @@ public class test {
     public static void main(String[] args) {
 
         try {
-            f(0);
+
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

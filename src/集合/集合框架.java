@@ -4,10 +4,19 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.function.Consumer;
+//----------------------容器API总览------------------------------------------------------
+   //框架分两种collection，map。区别就是map存键值对，两个数据
+   //collection由分为list接口，set接口,QUEUE，区别set不允许有重复的Set 接口实例存储的是无序的，没有索引
+   //list和set接口的实现类有很多，重点arraylist，linklist
 
-//框架分两种collection，map。区别就是map存键值对，两个数据
-//collection由分为list接口，set接口，区别set不允许有重复的Set 接口实例存储的是无序的，没有索引
-//list和set接口的实现类有很多，重点arraylist，linklist
+
+ //set表示不重复集合元素的集合
+/*Map<K,V> 主要有以下接口：
+基础：size（） clear（） get(Object k)返回键k的值  put(K k,V v)添加（键值对k，v） putAll(Mam m)
+特殊：containsKey(Object k) containsValue(Object v) 查询map中是否含有k，v，返回bool
+keySet（）返回所有键的set集合，注意不重复   valuse（）返回所有值的集合
+remove（Object k，Object v）remove（Object k）前者删除键k，并返回值，后者只删除
+*/
 public class 集合框架 {
     public static void main(String[] args) {
         Collection <String> strings =new ArrayList<>();
