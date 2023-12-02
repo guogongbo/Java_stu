@@ -1,0 +1,15 @@
+分字节流和字符流
+字节流分为字节输入和输出流,字节输入和输出流又能细分很多种，但只将文件和缓冲
+FileInputStream FileOutputStream      文件  字节输入和输出流
+BufferedInputStream  BufferedOutStream    缓冲  字节输入和输出流
+            同样的
+     字符流分为字符输入和输出流,字符输入和输出流又能细分很多种，但只将文件和缓冲
+
+ FileReader FileWriter
+ BufferedReader   BufferedWriter
+
+ 缓冲流（字符/字节缓冲流）的构造方法需要两个参数，一般第一个用对应的文件流（BufferedInputStream(new FileInputStream (new File(""文件名)))）
+ 第二个参数是[size]
+
+
+
